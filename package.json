@@ -1,0 +1,24 @@
+{
+  "name": "ten-pin",
+  "version": "1.0.0",
+  "description": "bowling score calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register",
+    "start": "budo index.js --live",
+    "console": "babel-node index.js"
+  },
+  "author": "shawndsouza@outlook.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babelify": "^6.1.2",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
